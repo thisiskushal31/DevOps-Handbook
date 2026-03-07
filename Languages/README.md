@@ -58,6 +58,17 @@ Programming languages used in DevOps, **cybersecurity**, and **Web3**: general-p
 
 ---
 
+## Content format (all languages)
+
+For **every concept** in every language section we use the same pattern so readers are not confused:
+
+1. **Text first** — Define the concept, goal, or rule in words.
+2. **Then a code block or visual** — Show the idea with real code (or a diagram) so people see syntax, structure, and flow.
+
+Topics go from **very basic to advanced**. Where possible, include **case studies or hands-on examples**: goal → approach/thought process → implementation (code) → expected behavior. This format applies to Ada and to every other language added to this handbook.
+
+---
+
 ## Structure
 
 One folder per language. Add topic files (e.g. `1_Basics_And_Syntax.md`, `2_Tooling_And_Packaging.md`) under each language folder and link from that folder’s README.
