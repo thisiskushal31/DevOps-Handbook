@@ -1,12 +1,12 @@
-# Assembly — Where it shows up: malware, shellcode, firmware, exploits
+# Assembly — Where it shows up: cybersecurity and engineering
 
 [← Assembly README](./README.md)
 
-In security and DevOps you encounter assembly in **disassembler and debugger output**, in **shellcode** and **exploit payloads**, in **firmware** and **boot code**, and in **legacy or performance-critical** binaries. This topic summarizes those contexts; see **Further reading** for authoritative sources.
+Assembly appears across **cybersecurity** (reverse engineering, malware, exploits) and **general engineering** (embedded, aerospace, automotive, industrial, compilers, DSP). You encounter it in **disassembler and debugger output**, in **shellcode** and **firmware**, in **boot and kernel code**, and in **safety-critical or performance-critical** systems. This topic summarizes those contexts; see **Further reading** for authoritative sources.
 
 ---
 
-## Disassembly and debuggers
+## Cybersecurity: disassembly and debuggers
 
 When you open a binary in a **disassembler** (IDA, Ghidra, Binary Ninja, objdump) or **debugger** (x64dbg, GDB, WinDbg), you see **assembly** (and often decompiled C-like code). The disassembler maps **machine code** back to **mnemonics and operands** using the CPU’s instruction set. That view is your primary way to reason about:
 
@@ -18,7 +18,7 @@ You don’t need to write assembly daily, but **reading** it is essential for re
 
 ---
 
-## Malware and implants
+## Cybersecurity: malware and implants
 
 Many **malware families** and **implants** are written in C/C++ and compiled to native code; when you analyze them you see **x86/x64** or **ARM** assembly. Packed or obfuscated samples may contain:
 
@@ -30,7 +30,7 @@ Understanding **calling conventions** and **common instruction sequences** helps
 
 ---
 
-## Shellcode and exploit payloads
+## Cybersecurity: shellcode and exploit payloads
 
 **Shellcode** is typically **position-independent code** (PIC) in raw machine code (or assembly that assembles to it), often injected into a process or sent over the network. It is used in:
 
@@ -41,7 +41,7 @@ Shellcode is usually **small** and **avoids** null bytes (or other bad bytes) so
 
 ---
 
-## Firmware and boot code
+## Engineering: firmware and boot code
 
 **BIOS**, **UEFI**, **boot loaders**, and **embedded firmware** often contain hand-written or compiler-generated assembly for:
 
@@ -53,7 +53,32 @@ You may see **16-bit real mode** (segment:offset), **32-bit protected mode**, or
 
 ---
 
-## Kernels and drivers
+## Engineering: embedded and real-time systems
+
+**Microcontrollers**, **bare-metal** firmware, and **real-time operating systems (RTOS)** often use hand-written or compiler-generated assembly for:
+
+- **Startup and reset** — Initialize stack, BSS, and C runtime before `main`.
+- **Interrupt service routines (ISRs)** — Minimal latency; save/restore only what’s needed.
+- **Critical timing** — Loops or sequences where cycle count is fixed (sensors, actuators, communication).
+- **Low-level drivers** — GPIO, UART, SPI, I2C, PWM, DMA setup.
+
+Architectures include **ARM Cortex-M**, **AVR**, **PIC**, **RISC-V**, and **MSP430**. Assembly is used when C cannot guarantee timing or code size, or when you are debugging compiler output in safety-critical or certified environments.
+
+---
+
+## Engineering: aerospace, automotive, and industrial
+
+**Aerospace** (flight control, avionics, DO-178C), **automotive** (engine/brake/steering ECUs, ISO 26262), and **industrial** (robotics, PLCs, motor control, IEC 61508) rely on deterministic, auditable low-level code. Assembly appears in:
+
+- **Boot and safety monitors** — Power-on self-test, watchdog, secure boot.
+- **Hot paths** — Control loops, filtering, or protocol handling where every cycle counts.
+- **Legacy or certified code** — Systems where the toolchain (including assembly) is part of the qualification.
+
+Reading assembly is necessary to **review**, **trace**, and **verify** behavior in these domains; writing it (or inline assembly in C) is common in startup code and performance-critical sections.
+
+---
+
+## Engineering: kernels and drivers
 
 **OS kernels** and **device drivers** mix C with **assembly** for:
 
@@ -66,14 +91,26 @@ When analyzing a kernel or driver binary, you will see these patterns in disasse
 
 ---
 
+## Engineering: compilers, runtimes, and signal processing
+
+**Compilers and runtimes** generate or use assembly for **code generation**, **trampolines**, **JIT stubs**, and **OS-specific sequences** (e.g. syscall wrappers, context switch). Understanding assembly helps when debugging codegen, optimizing hot paths, or maintaining a runtime.
+
+**Signal processing and DSP** (audio, video, radio, control) often use **SIMD** (SSE, AVX, NEON) or **fixed-point** arithmetic; the inner loops are sometimes hand-tuned in assembly or inspected in disassembly to verify performance and correctness.
+
+---
+
 ## Summary
 
-| Context               | Typical architecture | What you see                          |
-| --------------------- | -------------------- | ------------------------------------- |
-| Desktop/server binary | x86-64               | Long mode; OS ABI (System V / MS x64) |
-| Mobile / embedded     | ARM, AArch64         | AAPCS; possibly Thumb                 |
-| Malware / shellcode   | x86-64, ARM          | PIC, syscalls, API calls              |
-| Boot / firmware       | x86, ARM             | Real/protected mode; no OS ABI        |
+| Context | Typical architecture | What you see |
+| --- | --- | --- |
+| **Cybersecurity** | | |
+| Desktop/server binary | x86-64 | Long mode; OS ABI (System V / MS x64) |
+| Malware / shellcode | x86-64, ARM | PIC, syscalls, API calls |
+| **Engineering** | | |
+| Mobile / embedded / IoT | ARM, AArch64, RISC-V | AAPCS; Thumb; bare-metal; RTOS |
+| Boot / firmware / aerospace | x86, ARM | Real/protected mode; no OS ABI |
+| Kernels / drivers | x86-64, ARM | Handlers, atomics, CPU-specific |
+| Compilers / DSP / SIMD | x86-64, ARM | Codegen; SIMD/fixed-point loops |
 
 ---
 

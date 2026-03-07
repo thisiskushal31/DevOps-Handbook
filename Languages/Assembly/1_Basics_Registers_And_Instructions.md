@@ -2,7 +2,7 @@
 
 [← Assembly README](./README.md)
 
-Assembly language is a family of **low-level languages** that map closely to a CPU’s **machine code**. In security and DevOps you mostly **read** assembly (disassembler/debugger output); occasionally you write or patch it (shellcode, exploits, firmware). This topic covers **x86/x64** and **ARM** basics: what assembly is, registers, common instructions, and addressing. All of this is standard, documented material; see **Further reading** for official references.
+Assembly language is a family of **low-level languages** that map closely to a CPU’s **machine code**. In **cybersecurity** you read or write it (disassembler output, shellcode, exploits); in **general engineering** (embedded, firmware, kernels, compilers, DSP) you read or write it for timing, size, or correctness. This topic covers **x86/x64** and **ARM** basics: what assembly is, registers, common instructions, and addressing. All of this is standard, documented material; see **Further reading** for official references.
 
 ---
 

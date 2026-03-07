@@ -2,9 +2,11 @@
 
 [← Back to Languages](../README.md)
 
-**Why in security:** **Reverse engineering**, **malware analysis**, and **exploit development** often require reading or writing assembly. Disassemblers and debuggers (IDA, Ghidra, x64dbg, radare2) show code as assembly; shellcode and payloads are written in it. You don’t need to be fluent, but recognizing instructions, calling conventions, and structure is essential.
+**Why in cybersecurity:** **Reverse engineering**, **malware analysis**, and **exploit development** often require reading or writing assembly. Disassemblers and debuggers (IDA, Ghidra, x64dbg, radare2) show code as assembly; shellcode and payloads are written in it. Recognizing instructions, calling conventions, and structure is essential for binary analysis and vulnerability research.
 
-**Relevance:** x86/x64 (Intel/AMD), ARM (including ARM64), and sometimes MIPS appear in malware and embedded targets. Understanding stack layout, registers, and common patterns helps with binary analysis and vulnerability research.
+**Why in general engineering:** Assembly appears wherever software meets hardware or where **timing**, **size**, or **determinism** matter: **embedded systems** (microcontrollers, bare-metal, RTOS), **aerospace and automotive** (flight control, engine/brake ECUs, safety-critical firmware), **industrial control** (robotics, PLCs, motor control), **compilers and runtimes** (code generation, JIT stubs, OS kernels), and **signal processing** (DSP, SIMD, real-time filters). Reading assembly helps you debug, optimize, and audit low-level code across these domains.
+
+**Relevance:** x86/x64 (Intel/AMD), ARM (including ARM64), and MIPS appear in servers, PCs, mobile, IoT, and safety-critical systems. Understanding stack layout, registers, and common patterns helps in both security work and systems/embedded engineering.
 
 **Format:** Each concept is explained in text first, then illustrated with a **code block** or table where useful. Content is referenced from official or widely used sources; see **Further reading** in each topic and below.
 
@@ -16,7 +18,7 @@
 | --- | --- | --- |
 | 1 | Basics: registers, instructions, addressing (x86/x64 and ARM) | [1_Basics_Registers_And_Instructions.md](./1_Basics_Registers_And_Instructions.md) |
 | 2 | Reading disassembly and calling conventions | [2_Reading_Disassembly_And_Calling_Conventions.md](./2_Reading_Disassembly_And_Calling_Conventions.md) |
-| 3 | Where it shows up: malware, shellcode, firmware, exploits | [3_Where_It_Shows_Up.md](./3_Where_It_Shows_Up.md) |
+| 3 | Where it shows up: cybersecurity and engineering | [3_Where_It_Shows_Up.md](./3_Where_It_Shows_Up.md) |
 | 4 | Tooling: disassemblers, debuggers, and how they present assembly | [4_Tooling.md](./4_Tooling.md) |
 | 5 | Environment, basic syntax, and program structure | [5_Environment_Syntax_And_Program_Structure.md](./5_Environment_Syntax_And_Program_Structure.md) |
 | 6 | Registers, flags, and Linux system calls | [6_Registers_Flags_And_System_Calls.md](./6_Registers_Flags_And_System_Calls.md) |
@@ -26,6 +28,9 @@
 | 10 | Numbers, strings, and arrays | [10_Numbers_Strings_And_Arrays.md](./10_Numbers_Strings_And_Arrays.md) |
 | 11 | Recursion, file and memory management | [11_Recursion_File_And_Memory_Management.md](./11_Recursion_File_And_Memory_Management.md) |
 | 12 | Use cases, ecosystem, and online tools | [12_Use_Cases_Ecosystem_And_Online_Tools.md](./12_Use_Cases_Ecosystem_And_Online_Tools.md) |
+| 13 | Case studies and hands-on examples | [13_Case_Studies.md](./13_Case_Studies.md) |
+
+**Format:** Each concept is explained in text first, then illustrated with a **code block** or table. **Case studies** (topic 13) follow the same pattern: goal → approach → code → expected behavior, from Hello World to recursion, reading disassembly, and file I/O.
 
 ---
 

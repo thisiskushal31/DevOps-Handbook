@@ -2,7 +2,7 @@
 
 [← Assembly README](./README.md)
 
-This topic ties assembly to **related languages and tools**, **security and ethical hacking**, and **online compilers** so you can try assembly without a local install. It rounds out the deep dive from basics to advanced. See **Further reading** for sources.
+This topic ties assembly to **related languages and tools**, **cybersecurity**, **general engineering** (embedded, aerospace, automotive, industrial, compilers, DSP), and **online compilers**. It rounds out the deep dive from basics to advanced. See **Further reading** for sources.
 
 ---
 
@@ -21,15 +21,25 @@ This topic ties assembly to **related languages and tools**, **security and ethi
 | **Systems programming** | OS kernels, drivers, boot code, runtime libraries | C + inline asm; NASM, GAS; disassemblers |
 | **Security & reverse engineering** | Malware analysis, exploit dev, shellcode, binary auditing | IDA, Ghidra, x64dbg, GDB; see topic 3 |
 | **Ethical hacking & pentest** | Analyzing exploits, understanding payloads, low-level forensics | Same as above; ethical hacking courses often assume or teach basic assembly for exploit analysis |
-| **Embedded & firmware** | Boot, BIOS/UEFI, bare-metal, real-time | Cross-assemblers; processor manuals |
+| **Embedded & firmware** | Boot, BIOS/UEFI, bare-metal, RTOS, MCU startup | Cross-assemblers; ARM, AVR, RISC-V manuals |
+| **Aerospace & automotive** | Flight control, avionics, ECUs, safety-critical (DO-178C, ISO 26262) | Certified toolchains; traceability and review |
+| **Industrial & control** | Robotics, PLCs, motor control, IEC 61508 | Deterministic timing; hand-tuned or reviewed asm |
+| **Compilers & runtimes** | Code generation, JIT stubs, trampolines, context switch | Compiler back ends; OS and ABI docs |
+| **Signal processing & DSP** | SIMD (SSE, AVX, NEON), fixed-point, real-time filters | Profilers; processor optimization guides |
 | **Learning & teaching** | Computer architecture, compilers, “how the machine works” | NASM, YASM; online compilers (below) |
 | **Performance tuning** | Hot loops, SIMD, hand-optimized routines | Compiler asm output; profilers |
 
 ---
 
-## Ethical hacking and security
+## Cybersecurity: ethical hacking and security
 
 **Ethical hacking** (penetration testing, security assessments) involves finding and responsibly reporting weaknesses in systems. Many activities in this space are **low-level**: analyzing binaries, understanding buffer overflows and shellcode, reverse engineering malware, and writing or modifying exploit payloads. In that context you repeatedly encounter **assembly**: disassembler output, debugger views, and hand-written or generated shellcode. Topics 1–4 and 3 in this section (basics, reading disassembly, where it shows up, tooling) directly support that work. A broad ethical hacking tutorial (e.g. footprinting, scanning, exploitation, post-exploitation) does not replace assembly knowledge but often assumes it for the exploitation and reverse-engineering parts.
+
+---
+
+## General engineering: embedded, aerospace, industrial
+
+Beyond security, assembly is central in **embedded systems** (microcontrollers, bare-metal, RTOS startup and ISRs), **aerospace and automotive** (flight control, engine/brake ECUs, DO-178C / ISO 26262), and **industrial control** (robotics, PLCs, motor control). In these domains, assembly is used or reviewed for **deterministic timing**, **minimal code size**, **safety certification**, and **audit trails**. Compiler-generated assembly is inspected to verify that critical paths meet latency and correctness requirements; hand-written assembly appears in boot code, interrupt handlers, and performance-critical loops. See topic 3 for where assembly shows up in firmware, kernels, and DSP/SIMD.
 
 ---
 
@@ -52,7 +62,7 @@ Implementing **data structures and algorithms** in assembly is an advanced use c
 
 ## Summary: basic to advanced path
 
-The Assembly section is structured as a **deep dive** from very basic to advanced:
+The Assembly section is structured as a **deep dive** from very basic to implementation:
 
 1. **Basics** (1, 5–7) — Registers, instructions, addressing; environment, syntax, sections; variables, constants.
 2. **Reading and conventions** (2) — Prologue/epilogue, calling conventions, control flow.
@@ -60,6 +70,7 @@ The Assembly section is structured as a **deep dive** from very basic to advance
 4. **Tooling** (4) — Disassemblers, debuggers, assemblers.
 5. **Core programming** (6, 8–11) — Registers, flags, system calls; arithmetic, logical, control flow; procedures, stack, macros; numbers, strings, arrays; recursion, file and memory management.
 6. **Use cases and ecosystem** (12) — C and assemblers, security/ethical hacking, online tools, data structures/algorithms.
+7. **Case studies and implementation** (13) — Hands-on examples: Hello World, factorial recursion, reading disassembly, file write. See [13_Case_Studies.md](./13_Case_Studies.md).
 
 ---
 
@@ -70,4 +81,5 @@ The Assembly section is structured as a **deep dive** from very basic to advance
 - [Online Assembly (NASM) Compiler (TutorialsPoint CodeGround)](https://www.tutorialspoint.com/compilers/online-assembly-compiler.htm) — Write, run, and debug NASM in the browser.
 - [Online Yasm Compiler (TutorialsPoint CodeGround)](https://www.tutorialspoint.com/compilers/online-yasm-compiler.htm) — NASM-compatible assembly in the browser.
 - [Assembly — Where it shows up](./3_Where_It_Shows_Up.md) — Malware, shellcode, firmware, exploits.
+- [Assembly — Case studies](./13_Case_Studies.md) — Hello World, factorial, reading disassembly, file I/O.
 - [Assembly README](./README.md) — Topic index.
