@@ -32,6 +32,8 @@ end function norm2
 
 **Array arguments.** Use **assumed-shape** arrays in the procedure: `real, intent(in) :: x(:)` or `x(:,:)`. The actual bounds are passed; do not use explicit bounds that assume a fixed size. For allocatable or pointer arrays, declare accordingly. Pass arrays by simply using the array name; the whole array or a slice can be passed.
 
+**Interface blocks and elemental.** When a procedure is in another module or is external, the compiler may need an **interface block** (the procedure's signature) to check arguments and support keyword calls. Modules provide the interface automatically. For **elemental** procedures, declare with `elemental`; the procedure is applied element-wise to arrays (e.g. an elemental function can be called with a scalar or an array). Pure and elemental procedures are important for parallel and array-oriented code; see the references for full syntax.
+
 **Why this matters.** Clear intent and small, focused procedures improve maintainability. Pure functions are easier to test and use in array expressions. Correct array argument handling avoids bounds errors and allows the compiler to optimize. In libraries, document the interface (argument types, intent, optional) so callers use them correctly.
 
 ---

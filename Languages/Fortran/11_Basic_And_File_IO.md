@@ -12,6 +12,8 @@ Input/output (I/O) in Fortran uses **read** and **write** with a **unit number**
 
 **write and read with unit.** For full control, use **write(unit, format)** and **read(unit, format)**. The unit is an integer (or expression). Format can be `*` (list-directed), a format string in parentheses, or a label of a `format` statement. Example: `write(6, '(A, F10.4)') 'x = ', x`. Unit 6 is often stdout; 5 is often stdin. Prefer the **new_unit=** option in `open` to get a free unit number and avoid magic numbers.
 
+**Format descriptors (brief).** In a format string, common edit descriptors are: **A** (character), **I** (integer, e.g. `I5`), **F** (float, e.g. `F10.4` for 4 decimals), **E** (exponential), **G** (general). Example: `'(I4, 2X, F8.2)'` prints an integer in 4 columns, two spaces, then a real in 8 columns with 2 decimal places. List-directed I/O (`*`) is enough for many programs; use explicit format when you need fixed columns or specific precision in output. Full format syntax (repeat counts, scale factors, etc.) is in the language reference and Tutorials Point File I/O.
+
 **Opening a file.** `open(unit=u, file='name', status='...', action='...')` opens a file. Common options: `status='old'` (existing), `'new'` (must not exist), `'replace'` (overwrite), `'unknown'` (default); `action='read'`, `'write'`, or `'readwrite'`. Use `iostat=ierr` and check `ierr` to handle open failures (e.g. file not found, permission denied). Get a free unit with `open(newunit=u, ...)` so you do not conflict with other units.
 
 **Reading from and writing to a file.** After opening, use `read(u, *) ...` or `write(u, *) ...` with the same unit. Use list-directed (`*`) or an explicit format. When done, `close(u)`. Closing releases the unit and flushes buffers.

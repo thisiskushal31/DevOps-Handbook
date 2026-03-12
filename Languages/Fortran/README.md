@@ -71,6 +71,24 @@ Read in **number order** for a single path from beginner to advanced to use case
 
 ---
 
+## Scope: what's covered and what's not
+
+**Covered (aligned with your goals):** This section gives a full path from zero to use: what Fortran is, why and how to use it, and where it fits (use cases, security, DevOps). It includes every Tutorials Point topic (Overview, Environment, Syntax, Data Types, Variables, Constants, Operators, Decisions, Loops, Numbers, Characters, Strings, Arrays, Dynamic Arrays, Derived Types, Pointers, Basic/File I/O, Procedures, Modules, Intrinsics, Numeric Precision, Libraries, Style, Debugging), plus Use cases and Security/DevOps. That is enough to read and write Fortran, build with make/CMake, and operate in scientific and HPC contexts from software, DevOps, and security perspectives.
+
+**Not covered in depth here (by design):** Some topics are only mentioned or left for further reading so the section stays focused:
+
+- **Format descriptors** — I/O topic 11 mentions format strings; full format syntax (F, I, A, E, G, repeat counts, etc.) is in the Tutorials Point and fortran-lang references. List-directed (`*`) is enough for many cases.
+- **Interface blocks** — For external procedures or generic/overloaded procedures; see Procedures (Tutorials Point) and fortran-lang. We cover procedure definition and intent; interfaces are the next step when you need them.
+- **Coarrays (Fortran 2008+)** — Language-level parallelism (images, sync); we mention parallelism in Use cases (16). Full treatment is in parallel-programming guides and fortran-lang.
+- **Object-oriented Fortran** — Type extension, `class`, polymorphic assignment; fortran-lang has "OOP features." We cover derived types and pointers; OOP builds on those.
+- **Common block / EQUIVALENCE** — Legacy features; prefer modules and derived types. Relevant when reading very old code.
+- **Fixed-form source** — We assume free-form (`.f90`); fixed-form (columns 7–72, etc.) appears in legacy code; see references if you need it.
+- **Interoperability with C** — `bind(c)` and ISO_C_BINDING; important for mixed-language projects; see fortran-lang and compiler docs.
+
+If you need any of these, use the "Further reading" links in the relevant topic or the list below.
+
+---
+
 ## Further reading
 
 - [Fortran Tutorial (Tutorials Point)](https://www.tutorialspoint.com/fortran/index.htm) — Structured by topic: Overview, Environment, Syntax, Data Types, Variables, Constants, Operators, Decisions, Loops, Numbers, Characters, Strings, Arrays, Dynamic Arrays, Derived Types, Pointers, I/O, Procedures, Modules, Intrinsics, Numeric Precision, Libraries, Style, Debugging, Quick Guide, Useful Resources.
