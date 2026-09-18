@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="220" viewBox="0 0 980 220">
+  <rect width="980" height="220" fill="#fafafa"/>
+  <text x="16" y="28" font-family="Helvetica,Arial,sans-serif" font-size="16" font-weight="700">Power path — street → chip</text>
+  <g font-family="Helvetica,Arial,sans-serif" font-size="11">
+    <rect x="20" y="60" width="100" height="70" rx="6" fill="#fee2e2" stroke="#991b1b"/><text x="35" y="90">Utility</text><text x="30" y="110">intake</text>
+    <rect x="140" y="60" width="100" height="70" rx="6" fill="#fecaca" stroke="#991b1b"/><text x="155" y="90">XFMR</text><text x="148" y="110">switchgear</text>
+    <rect x="260" y="60" width="100" height="70" rx="6" fill="#fca5a5" stroke="#7f1d1d"/><text x="285" y="90">UPS</text><text x="270" y="110">+ battery</text>
+    <rect x="380" y="60" width="100" height="70" rx="6" fill="#f87171" stroke="#7f1d1d"/><text x="395" y="90">Generator</text><text x="400" y="110">(outage)</text>
+    <rect x="500" y="60" width="100" height="70" rx="6" fill="#fdba74" stroke="#9a3412"/><text x="515" y="90">Row PDU</text>
+    <rect x="620" y="60" width="100" height="70" rx="6" fill="#fbbf24" stroke="#92400e"/><text x="635" y="90">Rack PDU</text><text x="645" y="110">A / B</text>
+    <rect x="740" y="60" width="100" height="70" rx="6" fill="#a3e635" stroke="#3f6212"/><text x="770" y="90">PSU</text>
+    <rect x="860" y="60" width="100" height="70" rx="6" fill="#4ade80" stroke="#14532d"/><text x="885" y="90">CPU</text><text x="880" y="110">DIMM</text>
+  </g>
+  <text x="16" y="170" font-family="Helvetica,Arial,sans-serif" font-size="12">UPS bridges seconds; generators cover hours after transfer. Dual cord ≠ dual plant until the one-line says so.</text>
+  <text x="16" y="195" font-family="Helvetica,Arial,sans-serif" font-size="12">EPMS watches this path — reports steer capacity and incidents.</text>
+</svg>

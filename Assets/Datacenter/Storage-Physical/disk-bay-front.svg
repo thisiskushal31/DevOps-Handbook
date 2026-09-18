@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="200" viewBox="0 0 640 200">
+  <rect width="640" height="200" fill="#1f2937"/>
+  <text x="20" y="28" fill="#f9fafb" font-family="Helvetica" font-size="16" font-weight="700">Hot-swap disk bays (sketch)</text>
+  <g>
+    <rect x="30" y="50" width="90" height="40" rx="4" fill="#4b5563" stroke="#9ca3af"/>
+    <rect x="130" y="50" width="90" height="40" rx="4" fill="#4b5563" stroke="#9ca3af"/>
+    <rect x="230" y="50" width="90" height="40" rx="4" fill="#4b5563" stroke="#9ca3af"/>
+    <rect x="330" y="50" width="90" height="40" rx="4" fill="#4b5563" stroke="#9ca3af"/>
+    <rect x="430" y="50" width="90" height="40" rx="4" fill="#4b5563" stroke="#9ca3af"/>
+    <rect x="530" y="50" width="90" height="40" rx="4" fill="#4b5563" stroke="#9ca3af"/>
+    <rect x="30" y="110" width="90" height="40" rx="4" fill="#4b5563" stroke="#9ca3af"/>
+    <rect x="130" y="110" width="90" height="40" rx="4" fill="#4b5563" stroke="#9ca3af"/>
+    <rect x="230" y="110" width="90" height="40" rx="4" fill="#22c55e" stroke="#bbf7d0"/>
+    <rect x="330" y="110" width="90" height="40" rx="4" fill="#4b5563" stroke="#9ca3af"/>
+    <rect x="430" y="110" width="90" height="40" rx="4" fill="#4b5563" stroke="#9ca3af"/>
+    <rect x="530" y="110" width="90" height="40" rx="4" fill="#ef4444" stroke="#fecaca"/>
+  </g>
+  <text x="20" y="180" fill="#d1d5db" font-family="Helvetica" font-size="12">Green = online tray · Red = failed/rebuild — always reseat with procedure</text>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="360" viewBox="0 0 720 360">
+  <rect width="720" height="360" fill="#f7f5f0"/>
+  <text x="20" y="28" font-family="Helvetica,Arial,sans-serif" font-size="18" font-weight="700">Leaf–spine (placement sketch)</text>
+  <rect x="80" y="60" width="120" height="40" rx="6" fill="#93c5fd" stroke="#1e3a8a"/>
+  <text x="110" y="85" font-family="Helvetica,Arial,sans-serif" font-size="13">Spine A</text>
+  <rect x="520" y="60" width="120" height="40" rx="6" fill="#93c5fd" stroke="#1e3a8a"/>
+  <text x="550" y="85" font-family="Helvetica,Arial,sans-serif" font-size="13">Spine B</text>
+  <rect x="60" y="220" width="100" height="40" rx="6" fill="#86efac" stroke="#14532d"/>
+  <text x="80" y="245" font-family="Helvetica,Arial,sans-serif" font-size="12">Leaf/ToR</text>
+  <rect x="220" y="220" width="100" height="40" rx="6" fill="#86efac" stroke="#14532d"/>
+  <text x="240" y="245" font-family="Helvetica,Arial,sans-serif" font-size="12">Leaf/ToR</text>
+  <rect x="400" y="220" width="100" height="40" rx="6" fill="#86efac" stroke="#14532d"/>
+  <text x="420" y="245" font-family="Helvetica,Arial,sans-serif" font-size="12">Leaf/ToR</text>
+  <rect x="560" y="220" width="100" height="40" rx="6" fill="#86efac" stroke="#14532d"/>
+  <text x="580" y="245" font-family="Helvetica,Arial,sans-serif" font-size="12">Leaf/ToR</text>
+  <path d="M140 100 L110 220" stroke="#374151" stroke-width="2"/>
+  <path d="M140 100 L270 220" stroke="#374151" stroke-width="2"/>
+  <path d="M140 100 L450 220" stroke="#374151" stroke-width="2"/>
+  <path d="M140 100 L610 220" stroke="#374151" stroke-width="2"/>
+  <path d="M580 100 L110 220" stroke="#6b7280" stroke-width="2"/>
+  <path d="M580 100 L270 220" stroke="#6b7280" stroke-width="2"/>
+  <path d="M580 100 L450 220" stroke="#6b7280" stroke-width="2"/>
+  <path d="M580 100 L610 220" stroke="#6b7280" stroke-width="2"/>
+  <text x="40" y="310" font-family="Helvetica,Arial,sans-serif" font-size="12">Every leaf uplinks to every spine. Put spines on diverse power/racks.</text>
+  <text x="40" y="330" font-family="Helvetica,Arial,sans-serif" font-size="12">Servers dual-home to a ToR pair (A/B)—not both NICs into one switch.</text>
+</svg>

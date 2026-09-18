@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="300" viewBox="0 0 720 300">
+  <rect width="720" height="300" fill="#0f172a"/>
+  <text x="16" y="28" fill="#f8fafc" font-family="Helvetica" font-size="16" font-weight="700">Server box — what you are setting up</text>
+  <rect x="40" y="60" width="640" height="180" rx="10" fill="#1e293b" stroke="#94a3b8" stroke-width="2"/>
+  <rect x="60" y="80" width="120" height="60" fill="#38bdf8"/><text x="90" y="115" font-family="Helvetica" font-size="12">CPU</text>
+  <rect x="200" y="80" width="200" height="60" fill="#818cf8"/><text x="250" y="115" font-family="Helvetica" font-size="12">DIMM channels</text>
+  <rect x="420" y="80" width="120" height="60" fill="#34d399"/><text x="450" y="115" font-family="Helvetica" font-size="12">PCIe / NIC</text>
+  <rect x="560" y="80" width="100" height="60" fill="#fbbf24"/><text x="580" y="115" font-family="Helvetica" font-size="12">BMC</text>
+  <rect x="60" y="160" width="200" height="50" fill="#fb7185"/><text x="100" y="190" font-family="Helvetica" font-size="12">PSU A / PSU B</text>
+  <rect x="280" y="160" width="200" height="50" fill="#a78bfa"/><text x="320" y="190" font-family="Helvetica" font-size="12">Disks / RAID / NVMe</text>
+  <rect x="500" y="160" width="160" height="50" fill="#2dd4bf"/><text x="530" y="190" font-family="Helvetica" font-size="12">Fans / sensors</text>
+  <text x="16" y="270" fill="#cbd5e1" font-family="Helvetica" font-size="12">Setup order: power A/B → NIC dual-home → BMC on OOB → firmware → boot → image.</text>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="480" viewBox="0 0 420 480">
+  <rect width="420" height="480" fill="#f8fafc"/>
+  <text x="16" y="28" font-family="Helvetica" font-size="16" font-weight="700">Cabinet elevation (sketch)</text>
+  <rect x="120" y="50" width="180" height="400" fill="none" stroke="#0f172a" stroke-width="3"/>
+  <rect x="130" y="60" width="160" height="28" fill="#86efac" stroke="#14532d"/><text x="165" y="80" font-family="Helvetica" font-size="11">ToR / leaf</text>
+  <rect x="130" y="100" width="160" height="36" fill="#93c5fd" stroke="#1e3a8a"/><text x="160" y="122" font-family="Helvetica" font-size="11">Servers (NU)</text>
+  <rect x="130" y="145" width="160" height="36" fill="#93c5fd" stroke="#1e3a8a"/>
+  <rect x="130" y="190" width="160" height="36" fill="#93c5fd" stroke="#1e3a8a"/>
+  <rect x="130" y="235" width="160" height="24" fill="#e2e8f0" stroke="#64748b"/><text x="165" y="252" font-family="Helvetica" font-size="10">blanking</text>
+  <rect x="130" y="270" width="160" height="36" fill="#c4b5fd" stroke="#5b21b6"/><text x="155" y="292" font-family="Helvetica" font-size="11">Storage / GPU</text>
+  <rect x="130" y="400" width="70" height="40" fill="#fde68a" stroke="#92400e"/><text x="140" y="425" font-family="Helvetica" font-size="10">PDU A</text>
+  <rect x="220" y="400" width="70" height="40" fill="#fde68a" stroke="#92400e"/><text x="230" y="425" font-family="Helvetica" font-size="10">PDU B</text>
+  <text x="16" y="470" font-family="Helvetica" font-size="11">U map in DCIM must match reality before hands work.</text>
+</svg>

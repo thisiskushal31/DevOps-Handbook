@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="220" viewBox="0 0 700 220">
+  <rect width="700" height="220" fill="#fafafa"/>
+  <text x="16" y="28" font-family="Helvetica" font-size="16" font-weight="700">Accelerators change the hall math</text>
+  <rect x="40" y="60" width="180" height="80" rx="8" fill="#e2e8f0" stroke="#475569"/><text x="70" y="105" font-family="Helvetica" font-size="13">CPU rack ~kW</text>
+  <rect x="260" y="50" width="180" height="100" rx="8" fill="#fecaca" stroke="#991b1b"/><text x="285" y="100" font-family="Helvetica" font-size="13">GPU rack ≫ kW</text>
+  <rect x="480" y="50" width="180" height="100" rx="8" fill="#bfdbfe" stroke="#1e3a8a"/><text x="505" y="90" font-family="Helvetica" font-size="13">Liquid / CDU</text><text x="510" y="110" font-family="Helvetica" font-size="12">often required</text>
+  <text x="16" y="180" font-family="Helvetica" font-size="12">Check floor load, PDU phase, and cooling SKU before the PO — not after GPUs arrive.</text>
+</svg>

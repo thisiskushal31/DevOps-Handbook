@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="260" viewBox="0 0 900 260">
+  <rect width="900" height="260" fill="#fafaf9"/>
+  <text x="16" y="28" font-family="Helvetica" font-size="16" font-weight="700">Site / product shapes (literacy)</text>
+  <g font-family="Helvetica" font-size="12">
+    <rect x="30" y="60" width="150" height="120" rx="8" fill="#dbeafe" stroke="#1e3a8a"/><text x="50" y="100" font-weight="700">Owned DC</text><text x="45" y="125">You own plant</text><text x="45" y="145">+ iron</text>
+    <rect x="200" y="60" width="150" height="120" rx="8" fill="#dcfce7" stroke="#14532d"/><text x="230" y="100" font-weight="700">Colo</text><text x="215" y="125">Landlord plant</text><text x="215" y="145">Your iron/cage</text>
+    <rect x="370" y="60" width="150" height="120" rx="8" fill="#fef3c7" stroke="#92400e"/><text x="395" y="100" font-weight="700">Wholesale</text><text x="385" y="125">Large suites</text><text x="385" y="145">Hyperscale-ish</text>
+    <rect x="540" y="60" width="150" height="120" rx="8" fill="#fce7f3" stroke="#9d174d"/><text x="560" y="100" font-weight="700">Bare metal</text><text x="555" y="125">Rented server</text><text x="555" y="145">Portal BMC</text>
+    <rect x="710" y="60" width="150" height="120" rx="8" fill="#e9d5ff" stroke="#6b21a8"/><text x="745" y="100" font-weight="700">Edge</text><text x="730" y="125">Small room</text><text x="730" y="145">Still one domain</text>
+  </g>
+  <text x="16" y="220" font-family="Helvetica" font-size="12">Contract table (who owns building / iron / OS / app) beats marketing labels.</text>
+</svg>

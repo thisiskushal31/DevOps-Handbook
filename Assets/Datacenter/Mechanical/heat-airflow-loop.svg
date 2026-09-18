@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="280" viewBox="0 0 860 280">
+  <rect width="860" height="280" fill="#f0f9ff"/>
+  <text x="16" y="28" font-family="Helvetica,Arial,sans-serif" font-size="16" font-weight="700">Heat path — chips → outdoors</text>
+  <rect x="40" y="70" width="140" height="60" rx="8" fill="#fecaca" stroke="#991b1b"/><text x="60" y="105" font-family="Helvetica" font-size="13">Hot aisle / exhaust</text>
+  <rect x="240" y="70" width="140" height="60" rx="8" fill="#bfdbfe" stroke="#1e3a8a"/><text x="270" y="105" font-family="Helvetica" font-size="13">CRAH / CRAC</text>
+  <rect x="440" y="70" width="140" height="60" rx="8" fill="#93c5fd" stroke="#1e3a8a"/><text x="470" y="105" font-family="Helvetica" font-size="13">Chiller / plant</text>
+  <rect x="640" y="70" width="160" height="60" rx="8" fill="#67e8f9" stroke="#0e7490"/><text x="670" y="105" font-family="Helvetica" font-size="13">Tower / outdoors</text>
+  <path d="M180 100 H240" stroke="#334155" stroke-width="3"/>
+  <path d="M380 100 H440" stroke="#334155" stroke-width="3"/>
+  <path d="M580 100 H640" stroke="#334155" stroke-width="3"/>
+  <rect x="200" y="170" width="200" height="50" rx="8" fill="#dcfce7" stroke="#14532d"/><text x="230" y="200" font-family="Helvetica" font-size="13">Cold aisle → server inlet</text>
+  <text x="16" y="250" font-family="Helvetica" font-size="12">Blanking + containment keep hot and cold apart. Power-on with failed cooling still kills chips.</text>
+</svg>
